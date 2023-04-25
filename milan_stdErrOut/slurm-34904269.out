@@ -1,0 +1,31 @@
+
+Computing 1562500 samples on each of the 64 ranks
+
+Abort(210312335) on node 60 (rank 60 in comm 0): Fatal error in PMPI_Barrier: Other MPI error, error stack:
+PMPI_Barrier(273).......................: MPI_Barrier(comm=MPI_COMM_WORLD) failed
+PMPI_Barrier(259).......................: 
+MPIDI_Barrier_intra_composition_beta(77): 
+MPIDI_NM_mpi_barrier(75)................: 
+MPIR_Barrier_intra_auto(110)............: 
+MPIR_Barrier_intra_dissemination(45)....: 
+MPIC_Sendrecv(336)......................: 
+MPIC_Wait(67)...........................: 
+MPIR_Wait_impl(45)......................: 
+MPIDI_Progress_test(185)................: 
+MPIDI_OFI_handle_cq_error(1037).........: OFI poll failed (ofi_events.c:1037:MPIDI_OFI_handle_cq_error:Input/output error)
+MPIR_Barrier_intra_dissemination(45)....: 
+MPIC_Sendrecv(336)......................: 
+MPIC_Wait(67)...........................: 
+MPIR_Wait_impl(45)......................: 
+MPIDI_Progress_test(185)................: 
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 34904269.0 ON wmc014 CANCELLED AT 2023-04-25T21:56:17 ***
+MPIDI_OFI_handle_cq_error(1037).........: OFI poll failed (ofi_events.c:1037:MPIDI_OFI_handle_cq_error:Input/output error)
+slurmstepd: error: *** STEP 34904269.0 ON wmc014 CANCELLED AT 2023-04-25T21:56:17 ***
+srun: error: wmc022: task 62: Killed
+srun: error: wmc014: tasks 1-11: Killed
+srun: error: wmc021: task 61: Killed
+srun: error: wmc014: task 0: Killed
+srun: error: wmc015: tasks 12-44: Killed
+srun: error: wmc023: task 63: Killed
+srun: error: wmc016: tasks 45-60: Killed

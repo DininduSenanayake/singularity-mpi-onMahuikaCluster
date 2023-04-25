@@ -1,0 +1,43 @@
+
+Computing 12500000 samples on each of the 8 ranks
+
+Abort(207166607) on node 3 (rank 3 in comm 0): Fatal error in PMPI_Barrier: Other MPI error, error stack:
+PMPI_Barrier(273).......................: MPI_Barrier(comm=MPI_COMM_WORLD) failed
+PMPI_Barrier(259).......................: 
+MPIDI_Barrier_intra_composition_beta(77): 
+MPIDI_NM_mpi_barrier(75)................: 
+MPIR_Barrier_intra_auto(110)............: 
+MPIR_Barrier_intra_dissemination(45)....: 
+MPIC_Sendrecv(336)......................: 
+MPIC_Wait(67)...........................: 
+MPIR_Wait_impl(45)......................: 
+MPIDI_Progress_test(185)................: 
+MPIDI_OFI_handle_cq_error(1037).........: OFI poll failed (ofi_events.c:1037:MPIDI_OFI_handle_cq_error:Input/output error)
+Abort(207166607) on node 5 (rank 5 in comm 0): Fatal error in PMPI_Barrier: Other MPI error, error stack:
+PMPI_Barrier(273).......................: MPI_Barrier(comm=MPI_COMM_WORLD) failed
+PMPI_Barrier(259).......................: 
+MPIDI_Barrier_intra_composition_beta(77): 
+MPIDI_NM_mpi_barrier(75)................: 
+MPIR_Barrier_intra_auto(110)............: 
+MPIR_Barrier_intra_dissemination(45)....: 
+MPIC_Sendrecv(336)......................: 
+MPIC_Wait(67)...........................: 
+MPIR_Wait_impl(45)......................: 
+MPIDI_Progress_test(185)................: 
+MPIDI_OFI_handle_cq_error(1037).........: OFI poll failed (ofi_events.c:1037:MPIDI_OFI_handle_cq_error:Input/output error)
+Abort(207166607) on node 6 (rank 6 in comm 0): Fatal error in PMPI_Barrier: Other MPI error, error stack:
+PMPI_Barrier(273).......................: MPI_Barrier(comm=MPI_COMM_WORLD) failed
+PMPI_Barrier(259).......................: 
+MPIDI_Barrier_intra_composition_beta(77): 
+MPIDI_NM_mpi_barrier(75)................: 
+MPIR_Barrier_intra_auto(110)............: 
+MPIR_Barrier_intra_dissemination(45)....: 
+MPIC_Sendrecv(336)......................: 
+MPIC_Wait(67)...........................: 
+MPIR_Wait_impl(45)......................: 
+MPIDI_Progress_test(185)................: 
+MPIDI_OFI_handle_cq_error(1037).........: OFI poll failed (ofi_events.c:1037:MPIDI_OFI_handle_cq_error:Input/output error)
+slurmstepd: error: *** STEP 34904110.0 ON wmc016 CANCELLED AT 2023-04-25T21:52:46 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: error: wmc016: tasks 0-6: Killed
+srun: error: wmc021: task 7: Killed
